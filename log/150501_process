@@ -1,0 +1,5 @@
+1.设置tr寄存器，指向TSS;并在start.c中初始化TSS,只需初始化tss.ss0
+2.初始化GDT中的tr和ldt描述符，调用init_descriptor
+3.准备进程表，用于ring0的返回，
+4.调用restart完成跳转
+

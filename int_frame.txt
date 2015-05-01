@@ -1,0 +1,21 @@
+0.printk函数
+over
+
+1.中断初始化
+    1.1 在start.c中遍历安装中断门表，初始化成no_int。在kernel.asm中lidt  
+    1.2 初始化结构：
+        1.2.1 定义宏intr_stub,并完成do_irq,handle_irq_event函数。
+        1.2.2 循环展开235次，并将其初始化到irq_array[]中
+        1.2.3 初始化irq[]数组
+        1.2.4 初始化irq_desc[]数组
+
+        
+
+2.request_irq
+    1.3 完成request_irq函数
+
+3中断过程
+
+
+
+
